@@ -15,6 +15,8 @@ function gerarResultado(event) {
   const num2 = parseFloat(inputNumero2.value);
 
   const resultado = soma(num1, num2);
-
-  return alert(resultado);
+  document.getElementById('txt-resultado').innerText = "Resultado = " + resultado;
+  return resultado
 }
+
+
